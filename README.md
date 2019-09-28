@@ -24,7 +24,7 @@ Caso aconteça algum erro no comando `ef`, execute o comando abaixo para instala
 dotnet tool install --global dotnet-ef --version 3.0.0
 ```
 
-Por fim para rodar a aplicação esteja na pasta raiz e execute o comando:
+Por fim para rodar a aplicação esteja na pasta raiz da aplicação `./` e execute o comando:
 
 ```console
 dotnet run --project ./src/Api.Application/
