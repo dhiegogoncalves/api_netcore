@@ -4,7 +4,7 @@
 
 ### Iniciar a aplicacão :checkered_flag:
 
-Depois de efetuar o download da aplicação, acesse a raiz da pasta e execute o comando abaixo para efetuar o download das dependências e efetuar o build da aplicação:
+Depois de efetuar o download da aplicação, acesse a pasta `./src/` e execute o comando abaixo para efetuar o download das dependências e efetuar o build da aplicação:
 
 ```console
 dotnet build
