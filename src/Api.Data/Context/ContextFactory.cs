@@ -15,7 +15,7 @@ namespace Api.Data.Context
 
         public static string ConnectionString()
         {
-            return "Server=localhost;Port=5432;Database=dbAPI;User Id=postgres;Password=postgres;";
+            return "Server=localhost;Port=5432;Database=dbAPI2;User Id=postgres;Password=postgres;";
         }
     }
 }
