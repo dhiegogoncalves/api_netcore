@@ -1,7 +1,5 @@
-using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
-using Api.Domain.Entities;
+using Api.Domain.Dtos;
 using Api.Domain.Interfaces;
 using Api.Domain.Interfaces.Repositories;
 using Api.Domain.Interfaces.Services;
@@ -19,15 +17,15 @@ namespace Api.Service.Services
             _passwordHasher = passwordHasher;
         }
 
-        public async Task<object> FindByLogin(UserEntity user)
+        public async Task<object> FindByLogin(LoginDto loginDto)
         {
-            if (user != null && !string.IsNullOrWhiteSpace(user.Email) && !string.IsNullOrWhiteSpace(user.Password))
+            if (loginDto != null && !string.IsNullOrWhiteSpace(loginDto.Email) && !string.IsNullOrWhiteSpace(loginDto.Password))
             {
-                var userDb = await _repository.FindByLogin(user.Email, user.Password);
-                var (Verified, NeedsUpgrade) = _passwordHasher.Check(userDb.Password, user.Password);
+                var user = await _repository.FindByLogin(loginDto.Email, loginDto.Password);
+                var (Verified, NeedsUpgrade) = _passwordHasher.Check(user.Password, loginDto.Password);
                 if (Verified)
                 {
-                    return user;
+                    return loginDto;
                 }
             }
             return null;
