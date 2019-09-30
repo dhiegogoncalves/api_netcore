@@ -31,6 +31,7 @@ namespace Application
             // CrossCutting
             ConfigureService.ConfigureDependenciesService(services);
             ConfigureRepository.ConfigureDependenciesRepository(services);
+            ConfigureHelper.ConfigureDependenciesHelper(services);
 
             // Swagger
             services.AddSwaggerGen(c =>

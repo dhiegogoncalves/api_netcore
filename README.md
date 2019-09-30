@@ -1,12 +1,12 @@
 # API .NET Core
 
-> Este projeto é uma API desenvolvida com a metodologia DDD, utilizando .NET Core + Entity Framework Core + Swagger + AutoMapper + JWT.
+> Este projeto é uma API REST desenvolvida com os princípios do DDD, utilizando as tecnologias .NET Core + Entity Framework Core + Swagger + AutoMapper + JWT.
 
 ![Capturar](https://user-images.githubusercontent.com/6399309/65838580-8bebb280-e2d2-11e9-82b7-dc77f5e73d83.PNG)
 
 ### Iniciar a aplicacão :checkered_flag:
 
-Depois de efetuar o download da aplicação, acesse a pasta raiz e execute o comando abaixo para efetuar o download das dependências e efetuar o build da aplicação:
+Depois de efetuar o download da aplicação, acesse a pasta raiz e execute o comando abaixo para efetuar o download das dependências e o build da aplicação:
 
 ```console
 dotnet build ./src/

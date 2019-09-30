@@ -1,4 +1,5 @@
-using Api.Domain.Services;
+
+using Api.Domain.Interfaces.Services;
 using Api.Service.Services;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -9,6 +10,7 @@ namespace Api.CrossCutting.DependencyInjection
         public static void ConfigureDependenciesService(IServiceCollection serviceCollection)
         {
             serviceCollection.AddScoped<IUserService, UserService>();
+            serviceCollection.AddScoped<ILoginService, LoginService>();
         }
     }
 }
