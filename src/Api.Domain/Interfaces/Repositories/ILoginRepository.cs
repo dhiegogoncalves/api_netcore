@@ -4,8 +4,8 @@ using Api.Domain.Interfaces;
 
 namespace Api.Domain.Interfaces.Repositories
 {
-    public interface IUserRepository : IRepository<UserEntity>
+    public interface ILoginRepository : IRepository<UserEntity>
     {
-        Task<UserEntity> Update(UserEntity user);
+        Task<UserEntity> FindByLogin(string email, string password);
     }
 }

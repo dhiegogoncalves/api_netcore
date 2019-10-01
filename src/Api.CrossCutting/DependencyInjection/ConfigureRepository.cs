@@ -14,6 +14,7 @@ namespace Api.CrossCutting.DependencyInjection
         {
             serviceCollection.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
             serviceCollection.AddScoped<IUserRepository, UserImplementation>();
+            serviceCollection.AddScoped<ILoginRepository, UserImplementation>();
 
             serviceCollection.AddDbContext<MyContext>(
                 options => options.UseNpgsql(ContextFactory.ConnectionString())

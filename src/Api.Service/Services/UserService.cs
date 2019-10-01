@@ -42,14 +42,14 @@ namespace Api.Service.Services
             return user;
         }
 
-        public string PasswordEncryption(string password)
+        private string PasswordEncryption(string password)
         {
             return _passwordHasher.Hash(password);
         }
 
         public async Task<UserEntity> Put(UserEntity user)
         {
-            return await _repository.UpdateAsync(user);
+            return await _repository.Update(user);
         }
     }
 }

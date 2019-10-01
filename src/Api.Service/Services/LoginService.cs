@@ -16,13 +16,13 @@ namespace Api.Service.Services
 {
     public class LoginService : ILoginService
     {
-        private IUserRepository _repository;
+        private ILoginRepository _repository;
         private IPasswordHasher _passwordHasher;
         private SigningConfigurations _signingConfigurations;
         private TokenConfigurations _tokenConfigurations;
         private IConfiguration _configuration { get; }
 
-        public LoginService(IUserRepository repository, IPasswordHasher passwordHasher,
+        public LoginService(ILoginRepository repository, IPasswordHasher passwordHasher,
             SigningConfigurations signingConfigurations, TokenConfigurations tokenConfigurations, IConfiguration configuration)
         {
             _repository = repository;
