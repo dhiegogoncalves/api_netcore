@@ -1,13 +1,14 @@
 
 using Api.Domain.Helpers;
 using Api.Domain.Interfaces;
+using Api.Domain.Security;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Api.CrossCutting.DependencyInjection
 {
-    public class ConfigureHelper
+    public class ConfigureDefault
     {
-        public static void ConfigureDependenciesHelper(IServiceCollection serviceCollection)
+        public static void ConfigureDependencies(IServiceCollection serviceCollection)
         {
             serviceCollection.AddScoped<IPasswordHasher, PasswordHasher>();
         }
