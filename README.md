@@ -2,7 +2,7 @@
 
 > Este projeto é uma API REST desenvolvida com os princípios do DDD, utilizando as tecnologias .NET Core + Entity Framework Core + Swagger + AutoMapper + JWT.
 
-![Capturar](https://user-images.githubusercontent.com/6399309/65838580-8bebb280-e2d2-11e9-82b7-dc77f5e73d83.PNG)
+![Capturar](https://user-images.githubusercontent.com/6399309/66007615-21c54000-e481-11e9-8c13-fe543fb43cbc.PNG)
 
 ### Iniciar a aplicacão :checkered_flag:
 
