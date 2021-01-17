@@ -1,4 +1,4 @@
-# API .NET Core
+# Asp.Net Core DDD API
 
 > Este projeto é uma API REST desenvolvida com os princípios do DDD, utilizando as tecnologias .NET Core + Entity Framework Core + Swagger + AutoMapper + JWT.
 
